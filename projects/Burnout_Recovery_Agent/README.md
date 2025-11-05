@@ -24,7 +24,8 @@ It considers sleep, dopamine balance, nutrition, digital load, and mental state 
 
 ---
 
-### 🧱 Project Structure
+### 🧱 Структура проекта
+```
 Burnout_Recovery_Agent/
 │
 ├── main.py
@@ -35,7 +36,7 @@ Burnout_Recovery_Agent/
 │ ├── task_plan_node.py
 │ └── result_node.py
 └── README.md
-
+```
 ---
 
 ### 🚀 How It Works
