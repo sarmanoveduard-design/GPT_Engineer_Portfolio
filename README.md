@@ -31,7 +31,7 @@ RAG pipelines, STT/TTS systems, evaluation & retrieval optimization.
 
 | Project | Description | Stack |
 |:--|:--|:--|
-| 🟢 [**GPT Voice Telegram Bot**](https://github.com/sarmanoveduard-design/GPT_Engineer_Portfolio/tree/main/projects/GPT_Voice_Telegram_Bot) | Voice bot using GPT + Whisper + TTS on a remote server with Docker & SQLite logging | aiogram, GPT-4o-mini, Whisper-1, TTS, Docker |
+| 🟢 [**GPT Voice Telegram Bot**](https://github.com/sarmanoveduard-design/coway-telegram-bot) | Voice bot using GPT + Whisper + TTS on a remote server with Docker & SQLite logging | aiogram, GPT-4o-mini, Whisper-1, TTS, Docker |
 | 🟣 [**RAG Consultant OPOS**](https://github.com/sarmanoveduard-design/GPT_Engineer_Portfolio/tree/main/projects/RAG_Consultant_OPOS) | Document QA for industrial safety rules (hybrid FAISS + BM25 retriever) | LangChain, FAISS, BM25, Python |
 | 🔵 [**NeuroProtocolist**](#) | Speech-to-text meeting assistant that structures and summarizes dialogues | Whisper, GPT-4o, LangChain |
 | 🟠 [**Burnout Recovery Agent**](https://github.com/sarmanoveduard-design/GPT_Engineer_Portfolio/tree/main/projects/Burnout_Recovery_Agent) | Autonomous agent that builds personalized recovery strategies via Tavily | LangGraph, Tavily, GPT-4o |
