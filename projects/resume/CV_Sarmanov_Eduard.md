@@ -1,4 +1,4 @@
-# Eduard Sarmanov (Shef)
+# Eduard Sarmanov
 AI / GPT Engineer | South Korea 🇰🇷 | Remote / Hybrid
 
 📞 +82 10-7537-4744  
