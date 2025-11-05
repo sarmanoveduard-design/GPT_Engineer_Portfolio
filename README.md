@@ -1,3 +1,31 @@
+<div align="center">
+
+# 🚀 **Eduard Sarmanov**
+### *AI Engineer | GPT Systems | RAG | LangGraph | Voice Bots*
+
+🇰🇷 Based in South Korea | Open to Remote / Hybrid Work 🌍  
+📧 **sarmanoveduard@gmail.com** | 💬 [Telegram](https://t.me/Eduard_1611) | 💬 [KakaoTalk](https://invite.kakao.com/tc/1pOy07FSsS)
+
+---
+
+### 🧠 Tech Stack & Skills
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3D5A?style=for-the-badge)
+![LangGraph](https://img.shields.io/badge/LangGraph-4B8BBE?style=for-the-badge)
+![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405e?style=for-the-badge&logo=sqlite&logoColor=white)
+![Whisper](https://img.shields.io/badge/Whisper-STT_TTS-8E44AD?style=for-the-badge)
+![Tavily](https://img.shields.io/badge/Tavily_Search-1ABC9C?style=for-the-badge)
+![LangSmith](https://img.shields.io/badge/LangSmith-E67E22?style=for-the-badge)
+![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github)
+
+---
+
+</div>
+
 # 🤖 Eduard Sarmanov
 **AI / GPT Engineer | South Korea 🇰🇷 | Remote / Hybrid**
 
