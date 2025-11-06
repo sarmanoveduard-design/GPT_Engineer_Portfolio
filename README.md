@@ -1,86 +1,115 @@
-<div align="center">
+# 🎓 UAI_FT_vs_RAG
 
-# 🚀 **Eduard Sarmanov**
-### *AI Engineer | GPT Systems | RAG | LangGraph | Voice Bots*
+Сравнение **Fine-tuning** и **RAG** для одной и той же модели OpenAI (`gpt-4o-mini-2024-07-18`)  
+в рамках курса **Университета искусственного интеллекта**.
 
-🇰🇷 Based in South Korea | Open to Remote / Hybrid Work 🌍  
-📧 **sarmanoveduard@gmail.com** | 💬 [Telegram](https://t.me/Eduard_1611) | 💬 [KakaoTalk](https://invite.kakao.com/tc/1pOy07FSsS)
-
----
-
-### 🧠 Tech Stack & Skills
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3D5A?style=for-the-badge)
-![LangGraph](https://img.shields.io/badge/LangGraph-4B8BBE?style=for-the-badge)
-![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-07405e?style=for-the-badge&logo=sqlite&logoColor=white)
-![Whisper](https://img.shields.io/badge/Whisper-STT_TTS-8E44AD?style=for-the-badge)
-![Tavily](https://img.shields.io/badge/Tavily_Search-1ABC9C?style=for-the-badge)
-![LangSmith](https://img.shields.io/badge/LangSmith-E67E22?style=for-the-badge)
-![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github)
+> 💡 Учебный проект демонстрирует умение дообучать модели (Fine-tuning)  
+> и реализовывать Retrieval-Augmented Generation (RAG) на одном и том же датасете.  
+> Модель обучена так, чтобы не только отвечать на вопросы об обучении в УИИ,  
+> но и мягко мотивировать пользователя приобрести платные курсы.
 
 ---
 
-</div>
+## 📚 Цель проекта
+Сравнить два подхода адаптации языковых моделей:
 
-# 🤖 Eduard Sarmanov
-**AI / GPT Engineer | South Korea 🇰🇷 | Remote / Hybrid**
+1. **Fine-tuning** — дообучение модели под нужный стиль и задачи.  
+2. **RAG (Retrieval-Augmented Generation)** — подключение внешней базы знаний без изменения самой модели.
 
----
-
-## 🧭 About Me
-I'm an AI engineer specializing in **RAG systems, LangChain/LangGraph pipelines, and GPT-based intelligent agents**.  
-Currently completing my **GPT Engineer PRO** certification at Neural University.  
-Open to remote and hybrid collaboration in Korea and worldwide 🌍
+Обе версии модели протестированы на 5 одинаковых вопросов, касающихся обучения в Университете ИИ.
 
 ---
 
-## 📞 Contact
-📱 **Phone:** +82 10-7537-4744  
-💬 **KakaoTalk:** [invite.kakao.com/tc/1pOy07FSsS](https://invite.kakao.com/tc/1pOy07FSsS)  
-✈️ **Telegram:** [t.me/Eduard_1611](https://t.me/Eduard_1611)  
-📧 **Email:** sarmanoveduard@gmail.com  
-💻 **GitHub:** [sarmanoveduard-design](https://github.com/sarmanoveduard-design)
+## ⚙️ Структура проекта
+
+UAI_FT_vs_RAG/
+│
+├── data/ # Исходный датасет и подготовленные файлы
+│ ├── uai_dataset.csv
+│ ├── ft_train.jsonl
+│ └── rag_corpus.csv
+│
+├── finetune/ # Дообучение и тестирование fine-tuned модели
+│ ├── train.py
+│ └── test.py
+│
+├── rag/ # Реализация RAG-пайплайна
+│ ├── pipeline.py
+│ └── test.py
+│
+├── utils/ # Вспомогательные утилиты
+│ ├── prepare_data.py
+│ └── patch_upsell_links.py
+│
+├── results/ # Результаты и отчёты
+│ ├── finetune_results.csv
+│ ├── rag_results.csv
+│ ├── comparison_summary.txt
+│ ├── report.md
+│ └── ft_model.txt
+│
+├── .env.example # Шаблон переменных окружения
+├── .flake8 # Настройки линтера
+├── requirements.txt # Зависимости
+├── README.md # Документация проекта
+├── compare.py # Скрипт сравнения Fine-tune и RAG
+└── make_report.py # Генератор итогового отчёта в Markdown
 
 ---
 
-## 🧠 Skills
-**Languages & Tools:** Python, LangChain, LangGraph, LangSmith, OpenAI API, Whisper, TTS, Tavily,  
-FAISS, BM25, Flask, FastAPI, Docker, Git, VS Code.  
-**Core Competencies:** Prompt Engineering, Clean Code (flake8), CI/CD, .env management,  
-RAG pipelines, STT/TTS systems, evaluation & retrieval optimization.
+## 🧩 Используемые технологии
+- **OpenAI API (GPT-4o-mini)** — генерация и дообучение модели  
+- **LangChain / FAISS / numpy / pandas** — обработка и хранение данных  
+- **Flake8** — контроль чистоты кода  
+- **tabulate** — красивый Markdown-вывод отчёта  
 
 ---
 
-## 🚀 Projects
+## 🧠 Как запустить локально
 
-| Project | Description | Stack |
-|:--|:--|:--|
-| 🟢 [**GPT Voice Telegram Bot**](https://github.com/sarmanoveduard-design/coway-telegram-bot) | Voice bot using GPT + Whisper + TTS on a remote server with Docker & SQLite logging | aiogram, GPT-4o-mini, Whisper-1, TTS, Docker |
-| 🟣 [**RAG Consultant OPOS**](https://github.com/sarmanoveduard-design/GPT_Engineer_Portfolio/tree/main/projects/RAG_Consultant_OPOS) | Document QA for industrial safety rules (hybrid FAISS + BM25 retriever) | LangChain, FAISS, BM25, Python |
-| 🔵 [**NeuroProtocolist**](#) | Speech-to-text meeting assistant that structures and summarizes dialogues | Whisper, GPT-4o, LangChain |
-| 🟠 [**Burnout Recovery Agent**](https://github.com/sarmanoveduard-design/GPT_Engineer_Portfolio/tree/main/projects/Burnout_Recovery_Agent) | Autonomous agent that builds personalized recovery strategies via Tavily | LangGraph, Tavily, GPT-4o |
-| 🟡 [**LangGraph Hybrid Retriever**](https://github.com/sarmanoveduard-design/GPT_Engineer_Portfolio/tree/main/projects/LangGraph_Hybrid_Retriever) | Hybrid retriever with FAISS + BM25, evaluated with LangSmith | LangGraph, FAISS, BM25 |
+```bash
+# 1. Создать и активировать виртуальное окружение
+python -m venv .venv
+.venv\Scripts\activate
 
----
+# 2. Установить зависимости
+pip install -r requirements.txt
 
-## 🎓 Education
-**GPT Engineer PRO — Neural University (in progress)**  
-Modules: GPT Core ✅ · RAG ✅ · Prompt Engineering 🟡 · LangGraph / LangSmith 🟡 · Integration in Production 🟡 · Fine-tuning/NLP 🔜  
-Expected Certificate — *GPT Engineer Certified Specialist.*
+# 3. Подготовить данные
+copy .env.example .env
+# (вставить свой OPENAI_API_KEY в .env)
+python utils/prepare_data.py
 
----
+# 4. Fine-tuning
+python finetune/train.py
+python finetune/test.py
 
-## 🌐 Languages
-- Russian — Native  
-- English — A2 (basic reading & writing)  
-- Korean — Conversational (daily use)
+# 5. RAG
+python -m rag.test
 
----
+# 6. Сравнение и отчёт
+python compare.py
+python make_report.py
 
-## 🧩 Interests
-AI automation, generative assistants, RAG retrieval systems, voice & cognitive AI.
 
+📊 Результаты
+
+Итоговый отчёт: results/report.md
+
+Fine-tuning и RAG тестировались на пяти одинаковых вопросах.
+Сравнение показало:
+
+Метрика	                    Fine-tune	    RAG
+CTA (мягкие продажи)	    1.0	            0.8
+Структура (списки/абзацы)	0.8	            1.0
+Краткость/точность	        1.0	            1.0
+Суммарный балл	            1.8	            1.8
+
+Вывод: Fine-tuning даёт более стабильный стиль и естественные CTA,
+RAG — точнее в фактах и контексте.
+💡 Оптимальный вариант — использовать гибридный подход (Fine-tuning + RAG).
+
+🧑‍💻 Автор
+
+Сарманов Эдуард (Шеф)
+Учебный проект выполнен совместно с цифровым ассистентом Джарвисом 🤖

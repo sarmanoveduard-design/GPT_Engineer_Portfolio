@@ -1,0 +1,8 @@
+python-dotenv>=1.0.1
+pandas>=2.2.2
+numpy>=1.26.4
+tqdm>=4.66.4
+scikit-learn>=1.4.2
+openai>=1.51.0
+python make_report.py
+flake8>=7.0.0
